@@ -33,4 +33,9 @@ body{
     background-color: rgba(100, 80, 210, 0.5);
     border: none;
     outline: none;
+    font-family: inherit;
+    font-size: 18px;
+    display: grid;
+    place-content: center;
+    height: 100%;
 }
