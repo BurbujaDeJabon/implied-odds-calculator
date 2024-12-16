@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implied Odds Calculator</title>
+
+    <!--local styles-->
+    <link rel="stylesheet" href="./style.css">
+    <!--local script-->
+    <script src="./script.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h1>Implied Odds Calculator</h1>
+    
+        <p>
+            [(1/EQ) * C] - (P+C)<br>
+            Where C is how much you have to call right this moment, P is the size of the pot after your opponent bets, 
+            and Eq is how often you will improve to a winning hand vs. their betting range. 
+            The answer is how much you need to win on future streets to offset getting immediately incorrect pot odds. 
+            (Hint: if the resulting calculation is negative, it means you already have correct pot odds to continue.)
+        </p>
+        <hr>
+    
+        <label for="improve-chance">Chance you improve (%)</label>
+        <input id="improve-chance" name="improve-chance" type="number" min="0" max="100" step="0.01" required />
+    
+        <label for="pot-size">Current pot size:</label>
+        <input id="pot-size" name="pot-size" type="number" min="0" step="0.01" required />
+    
+        <label for="call-amount">Amount to call:</label>
+        <input id="call-amount" name="call-amount" type="number" min="0" step="0.01" required />
+    
+        <button id="calculate-odds">Calculate</button>
+    
+        <p id="result-display">Results will appear here.</p>
+    </div>
+
+    </body>
+    </html>
