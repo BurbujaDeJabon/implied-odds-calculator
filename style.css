@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e5e5e5;
+    line-height: 1.6;
     display: grid;
     place-content: center;
     height: 100vh;
@@ -13,5 +14,23 @@ body{
     padding: 1em 2em;
     border-radius: 12px;
     display: grid;
-    
+    max-width: 42em;
+    min-height: 400px;
+}
+
+.container input {
+    padding: 0.825rem;
+    font-size: 18px;
+    border-radius: 12px;
+    outline: none;
+}
+
+.container button {
+    margin-top: 1rem;
+    padding: 0.825rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(100, 80, 210, 0.5);
+    border: none;
+    outline: none;
 }
